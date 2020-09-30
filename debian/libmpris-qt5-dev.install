@@ -1,0 +1,4 @@
+usr/include/*/qt5/*
+usr/lib/*/libmpris-qt5.so
+usr/lib/*/pkgconfig
+usr/lib/*/qt5/mkspecs

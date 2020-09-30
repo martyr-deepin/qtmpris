@@ -1,0 +1,32 @@
+qtmpris (0.1.0-2) unstable; urgency=medium
+
+  * Rebuild with gcc-8. Closes: #897843
+  * Update Symbols file.
+  * d/control: Fix wrong descriptions about libmpris-qt5-1 and
+    libmpris-qt5-dev.
+
+ -- Yanhao Mo <yanhaocs@gmail.com>  Sat, 21 Jul 2018 09:24:32 +0800
+
+qtmpris (0.1.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Revert maintainer address to pkg-deepin-devel mailing list.
+  * Install README.md file as development package's documentation.
+
+ -- Boyuan Yang <073plan@gmail.com>  Sun, 01 Jul 2018 09:41:30 +0800
+
+qtmpris (0.0.8-2) unstable; urgency=medium
+
+  * Team upload.
+  * Use team+pkg-deepin@tracker.debian.org in maintainer field.
+  * Bump Standards-Version to 4.1.4 (no changes needed).
+  * d/rules: Use "dh-missing --fail-missing".
+
+ -- Boyuan Yang <073plan@gmail.com>  Fri, 20 Apr 2018 18:04:09 +0800
+
+qtmpris (0.0.8-1) unstable; urgency=medium
+
+  * Initial release. Closes: #894678
+
+ -- Yanhao Mo <yanhaocs@gmail.com>  Tue, 03 Apr 2018 15:53:16 +0800

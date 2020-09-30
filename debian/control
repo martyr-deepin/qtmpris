@@ -1,0 +1,64 @@
+Source: qtmpris
+Section: misc
+Priority: optional
+Maintainer: Debian Deepin Packaging Team <pkg-deepin-devel@lists.alioth.debian.org>
+Uploaders:
+ Yanhao Mo <yanhaocs@gmail.com>,
+Build-Depends:
+ debhelper (>= 11~),
+ libdbusextended-qt5-dev,
+ pkg-config,
+ qt5-qmake,
+ qtbase5-dev,
+ qtdeclarative5-dev,
+Standards-Version: 4.1.4
+Homepage: https://github.com/nemomobile/qtmpris
+Vcs-Git: https://salsa.debian.org/pkg-deepin-team/qtmpris.git
+Vcs-Browser: https://salsa.debian.org/pkg-deepin-team/qtmpris
+
+Package: libmpris-qt5-1
+Architecture: any
+Section: libs
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+Description: Qt MPRIS interface and adaptor
+ qtmpris is a library which implement the MPRIS v.2 specification.
+ .
+ The MPRIS ( Media Player Remote Interfacing Specification ) is a
+ standard D-Bus interface which aims to provide a common programmatic
+ API for controlling media players.
+ .
+ This package contains the header files of qtmpris.
+
+Package: libmpris-qt5-dev
+Architecture: any
+Section: libdevel
+Multi-Arch: same
+Depends:
+ libmpris-qt5-1 (= ${binary:Version}),
+ ${misc:Depends},
+Description: Qt MPRIS interface and adaptor (development files)
+ qtmpris is a library which implement the MPRIS v.2 specification.
+ .
+ The MPRIS ( Media Player Remote Interfacing Specification ) is a
+ standard D-Bus interface which aims to provide a common
+ programmatic API for controlling media players.
+ .
+ This package contains the shared libraries.
+
+Package: qml-module-org-nemomobile-mpris
+Architecture: any
+Multi-Arch: same
+Pre-Depends:
+ ${misc:Pre-Depends},
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+Description: Qt 5 MPRIS interface and adaptor QML module
+ The MPRIS ( Media Player Remote Interfacing Specification ) is a
+ standard D-Bus interface which aims to provide a common
+ programmatic API for controlling media players.
+ .
+ This package contains the QML module for qtmpris.
